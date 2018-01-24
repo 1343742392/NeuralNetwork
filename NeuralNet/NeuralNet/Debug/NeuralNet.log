@@ -1,0 +1,12 @@
+﻿  NeuralNet.cpp
+c:\users\administrator\source\repos\neuralnet\neuralnet\mytools.h(11): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
+c:\users\administrator\source\repos\neuralnet\neuralnet\mytools.h(49): warning C4477: “sprintf_s”: 格式字符串“%c”需要类型“int”的参数，但可变参数 1 拥有了类型“double”
+c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(44): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(124): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(134): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(149): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(165): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(196): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(208): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(217): warning C4018: “<”: 有符号/无符号不匹配
+  NeuralNet.vcxproj -> C:\Users\Administrator\source\repos\NeuralNet\Debug\NeuralNet.exe
