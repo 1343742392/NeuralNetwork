@@ -1,12 +1,21 @@
 ﻿  NeuralNet.cpp
-c:\users\administrator\source\repos\neuralnet\neuralnet\mytools.h(11): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
-c:\users\administrator\source\repos\neuralnet\neuralnet\mytools.h(49): warning C4477: “sprintf_s”: 格式字符串“%c”需要类型“int”的参数，但可变参数 1 拥有了类型“double”
-c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(44): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(124): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(134): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(149): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(165): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(196): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(208): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neuralnet\neuralnet\neuralnet.h(217): warning C4018: “<”: 有符号/无符号不匹配
-  NeuralNet.vcxproj -> C:\Users\Administrator\source\repos\NeuralNet\Debug\NeuralNet.exe
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\mytools.h(11): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\mytools.h(56): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(44): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(124): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(134): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(149): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(165): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(196): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(208): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(217): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(33): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(53): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(55): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(57): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(84): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(86): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(88): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(24): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(89): note: 参见“strcat”的声明

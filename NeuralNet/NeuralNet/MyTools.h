@@ -13,6 +13,8 @@ long int getFileLength(std::ifstream &f) {
 	return length;
 }
 
+
+
 void setArr(int inputLen, float *value, float *setValue, int star = 0)
 {
 	for (int f = 0; f < inputLen; f++)
@@ -41,13 +43,17 @@ float cost(float expect, float reslut)
 
 void floatToChar(float &input, char* reslut)
 {
-	sprintf_s(reslut, 9, "%g", input);
+	sprintf_s(reslut, 20, "%g", input);
 }
 
 void charToFloat(char* input, float &reslut)
 {
-	sprintf_s(input, 8, "%c", reslut);
+	sscanf_s(input, "%f", &reslut);
 }
 
+void intToChar(int &input, char *out)
+{
+	sprintf_s(input, "%d", input);
+}
 
 #endif
