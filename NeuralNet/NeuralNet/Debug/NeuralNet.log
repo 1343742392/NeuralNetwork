@@ -1,18 +1,18 @@
 ﻿  NeuralNet.cpp
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\mytools.h(11): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(44): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(123): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(131): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(146): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(162): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(194): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(205): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.h(214): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(82): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(95): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(97): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(99): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(149): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(151): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\source\repos\neural\neuralnet\neuralnet\neuralnet.cpp(153): warning C4018: “<”: 有符号/无符号不匹配
-  NeuralNet.vcxproj -> C:\Users\Administrator\source\repos\Neural\NeuralNet\Debug\NeuralNet.exe
+h:\project\neuralnetwork\neuralnet\neuralnet\mytools.h(11): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.h(44): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.h(116): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.h(124): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.h(139): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.h(155): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.h(187): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.h(198): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.h(207): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.cpp(82): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.cpp(95): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.cpp(97): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.cpp(99): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.cpp(149): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.cpp(151): warning C4018: “<”: 有符号/无符号不匹配
+h:\project\neuralnetwork\neuralnet\neuralnet\neuralnet.cpp(153): warning C4018: “<”: 有符号/无符号不匹配
+  NeuralNet.vcxproj -> H:\project\NeuralNetwork\NeuralNet\Debug\NeuralNet.exe

@@ -51,22 +51,15 @@ public:
 		setArr(inputNum, input, Arrinput);
 	}
 
-	void setW(float *WArr)
-	{
-		for (int f = 0; f < inputNum; f++)
-		{
-			w[f] = WArr[f];
-		}
-	}
 
 	std::vector<float> getW()
 	{
 		return w;
 	}
 
-	void setW(std::vector<float> w)
+	void setW(std::vector<float>* w)
 	{
-		this->w = w;
+		this->w = *w;
 	}
 
 	float *getInput()
@@ -156,12 +149,12 @@ public:
 		return LWs;
 	}
 
-	void  setWs(std::vector<std::vector<float>> layW)
+	void  setWs(std::vector<std::vector<float>>* layW)
 	{
 		//遍历这一层所有神经元
 		for (int f = 0; f < ys.size(); f++)
 		{
-			ys[f].setW(layW[f]);
+			ys[f].setW(&(*layW)[f]);
 		}
 	}
 
@@ -209,11 +202,11 @@ public:
 		return netW;
 	}
 
-	 void setNetWs(std::vector<std::vector<std::vector<float>>> netWs)
+	 void setNetWs(std::vector<std::vector<std::vector<float>>> *netWs)
 	{
 		for (int f = 0; f < ls.size(); f++)
 		{
-			ls[f].setWs(netWs[f]);
+			ls[f].setWs(&(*netWs)[f]);
 		}
 	}
 };
