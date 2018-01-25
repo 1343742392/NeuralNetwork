@@ -23,9 +23,9 @@ void setArr(int inputLen, float *value, float *setValue, int star = 0)
 	}
 }
 
-float sigmoid(float *input, float a = 1)
+float sigmoid(float input, float a = 1)
 {
-	return 1 / (1 + exp(-a * (*input)));
+	return 1 / (1 + exp(-a * input));
 }
 
 void printfArr(int length, float *arr)
@@ -53,7 +53,7 @@ void charToFloat(char* input, float &reslut)
 
 void intToChar(int &input, char *out)
 {
-	sprintf_s(input, "%d", input);
+	sprintf_s(out, 2, "%d", input);
 }
 
 #endif

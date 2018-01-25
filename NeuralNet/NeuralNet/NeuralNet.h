@@ -76,10 +76,10 @@ public:
 
 	float out()
 	{
-		float* value = new float(0);
+		float value = 0;
 		for (int f = 0; f < inputNum; f++)
 		{
-			*value = *value + w[f] * input[f];
+			value = value + w[f] * input[f];
 		}
 		return sigmoid(value);
 	}
@@ -118,15 +118,12 @@ public:
 		return ys;
 	}
 
-	float * out()
+	void  out(float* lout)
 	{
-		float *data = new float[ys.size()];
 		for (int f = 0; f < ys.size(); f++)
 		{
-			data[f] = ys[f].out();
+			lout[f] = ys[f].out();
 		}
-
-		return data;
 	}
 	//ÊäÈëÊý¾Ý   
 	void setInput(float *data)
@@ -192,15 +189,15 @@ public:
 	void  run(float &reslut)
 	{
 		ls[0].setInput(input);
-		float * lOut = ls[0].out();
+		float * lOut = new float[ls[0].getYuanLength()];
+		ls[0].out(lOut);
 		for (int f = 1; f < ls.size(); f++)
 		{
 			ls[f].setInput(lOut);
-			free(lOut);
-			lOut = ls[f].out();
+			ls[f].out(lOut);
 		}
 		reslut = *lOut;
-		free(lOut);
+		delete[] lOut;
 	}
 
 	std::vector<std::vector<std::vector<float>>> getNetWs()
