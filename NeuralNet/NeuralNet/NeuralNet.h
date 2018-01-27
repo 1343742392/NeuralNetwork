@@ -26,7 +26,7 @@ printf("%f", *n1->run());
 反复运行结果不会变
 */
 
-class Yuan
+class Neure
 {
 	int inputNum;
 	std::vector<float> w;
@@ -34,14 +34,14 @@ class Yuan
 
 
 public:
-	Yuan(int inputLen)
+	Neure(int inputLen)
 	{
 		inputNum = inputLen;
 		input = new float[inputLen];
 
 		for (int f = 0; f < inputLen; f++)
 		{
-			w.push_back(rand() % 2);
+			w.push_back(rand() % 100 * 0.01 + 0.5 );
 		}
 		
 	}
@@ -74,7 +74,9 @@ public:
 		{
 			value = value + w[f] * input[f];
 		}
-		return sigmoid(value);
+		float f = sigmoid(value);
+
+		return f;
 	}
 
 	int getInputNum()
@@ -82,7 +84,7 @@ public:
 		return inputNum;
 	}
 
-	~Yuan()
+	~Neure()
 	{
 
 	}
@@ -91,7 +93,7 @@ public:
 class Lay
 {
 private:
-	std::vector<Yuan> ys;
+	std::vector<Neure> ys;
 	std::vector<std::vector<float>> LWs;
 public:
 
@@ -100,13 +102,13 @@ public:
 	{
 		for (int f = 0; f < Ylength; f++)
 		{
-			Yuan  y(Ilength);
+			Neure  y(Ilength);
 			ys.push_back(y);
 		}
 	}
 
 
-	std::vector<Yuan> getYuan()
+	std::vector<Neure> getYuan()
 	{
 		return ys;
 	}
@@ -116,6 +118,7 @@ public:
 		for (int f = 0; f < ys.size(); f++)
 		{
 			lout[f] = ys[f].out();
+			
 		}
 	}
 	//输入数据   
@@ -164,13 +167,12 @@ class Net
 {
 	std::vector<Lay> ls;
 	std::vector<float> ws;
-	float* input;
 	std::vector<std::vector<std::vector<float>>> netW;
 public:
 	//整个网络的输入   输入多少个数据
-	Net(float* input, int length)
+	Net()
 	{
-		this->input = input;
+
 	}
 
 	void addLay(Lay lay)
@@ -181,7 +183,7 @@ public:
 
 	void  run(float &reslut)
 	{
-		ls[0].setInput(input);
+
 		float * lOut = new float[ls[0].getYuanLength()];
 		ls[0].out(lOut);
 		for (int f = 1; f < ls.size(); f++)
@@ -202,7 +204,7 @@ public:
 		return netW;
 	}
 
-	 void setNetWs(std::vector<std::vector<std::vector<float>>> *netWs)
+	 void setNetWs(std::vector<std::vector<std::vector<float>>>* netWs)
 	{
 		for (int f = 0; f < ls.size(); f++)
 		{
