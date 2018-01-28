@@ -41,7 +41,7 @@ public:
 
 		for (int f = 0; f < inputLen; f++)
 		{
-			w.push_back(rand() % 100 * 0.01 + 0.5 );
+			w.push_back(rand() % 100 * 0.001 + 0.05 );
 		}
 		
 	}
@@ -49,6 +49,7 @@ public:
 	void setInput(float *Arrinput)
 	{
 		setArr(inputNum, input, Arrinput);
+		
 	}
 
 
@@ -57,9 +58,9 @@ public:
 		return w;
 	}
 
-	void setW(std::vector<float>* w)
+	void setW(std::vector<float> &w)
 	{
-		this->w = *w;
+		this->w = w;
 	}
 
 	float *getInput()
@@ -126,7 +127,6 @@ public:
 	{
 		for (int f = 0; f < ys.size(); f++)
 		{
-			float* inputData = &data[ys[f].getInputNum() * f];
 			ys[f].setInput(data);
 		}
 	}
@@ -152,12 +152,12 @@ public:
 		return LWs;
 	}
 
-	void  setWs(std::vector<std::vector<float>>* layW)
+	void  setWs(std::vector<std::vector<float>> &layW)
 	{
 		//遍历这一层所有神经元
 		for (int f = 0; f < ys.size(); f++)
 		{
-			ys[f].setW(&(*layW)[f]);
+			ys[f].setW(layW[f]);
 		}
 	}
 
@@ -167,12 +167,13 @@ class Net
 {
 	std::vector<Lay> ls;
 	std::vector<float> ws;
+	float *input = 0;
 	std::vector<std::vector<std::vector<float>>> netW;
 public:
 	//整个网络的输入   输入多少个数据
-	Net()
+	Net( float *input)
 	{
-
+		this->input = input;
 	}
 
 	void addLay(Lay lay)
@@ -185,9 +186,11 @@ public:
 	{
 
 		float * lOut = new float[ls[0].getYuanLength()];
+		ls[0].setInput(input);
 		ls[0].out(lOut);
 		for (int f = 1; f < ls.size(); f++)
 		{
+	
 			ls[f].setInput(lOut);
 			ls[f].out(lOut);
 		}
@@ -204,11 +207,11 @@ public:
 		return netW;
 	}
 
-	 void setNetWs(std::vector<std::vector<std::vector<float>>>* netWs)
+	 void setNetWs(std::vector<std::vector<std::vector<float>>> &netWs)
 	{
 		for (int f = 0; f < ls.size(); f++)
 		{
-			ls[f].setWs(&(*netWs)[f]);
+			ls[f].setWs(netWs[f]);
 		}
 	}
 };

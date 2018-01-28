@@ -28,11 +28,19 @@ float sigmoid(float input, float a = 1)
 	return 1 / (1 + exp(-a * input));
 }
 
-void printfArr(int length, float *arr)
+void printfArr(int length, float *arr, int start = 0)
 {
 	for (int f = 0; f < length; f++)
-		printf("%f\n", arr[f]);
+		printf("%f\n", arr[start + f]);
 }
+
+void printfArr(int length, char *arr, int start = 0)
+{
+	for (int f = 0; f < length; f++)
+		printf("%d  %d\n", f, arr[start + f]);
+}
+
+
 
 
 float cost(float expect, float reslut)
