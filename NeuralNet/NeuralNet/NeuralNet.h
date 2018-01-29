@@ -182,7 +182,7 @@ public:
 	
 	}
 
-	void  run(float &reslut)
+	void  run(float* reslut)
 	{
 
 		float * lOut = new float[ls[0].getYuanLength()];
@@ -194,7 +194,7 @@ public:
 			ls[f].setInput(lOut);
 			ls[f].out(lOut);
 		}
-		reslut = *lOut;
+		setArr(10, reslut, lOut);
 		delete[] lOut;
 	}
 

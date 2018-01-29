@@ -43,10 +43,12 @@ void printfArr(int length, char *arr, int start = 0)
 
 
 
-float cost(float expect, float reslut)
+float cost(float *expect, float *reslut)
 {
-
-	return pow((reslut - expect), 2);
+	float res = 0;
+	for(int f = 0; f < 10; f ++)
+		res += pow((reslut[f] - expect[f]), 2);
+	return res;
 }
 
 void floatToChar(float &input, char* reslut)
