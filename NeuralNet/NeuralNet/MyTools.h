@@ -31,7 +31,7 @@ float sigmoid(float input, float a = 1)
 void printfArr(int length, float *arr, int start = 0)
 {
 	for (int f = 0; f < length; f++)
-		printf("%f\n", arr[start + f]);
+		printf("%d   %f\n", f, arr[start + f]);
 }
 
 void printfArr(int length, char *arr, int start = 0)
@@ -46,7 +46,7 @@ void printfArr(int length, char *arr, int start = 0)
 float cost(float *expect, float *reslut)
 {
 	float res = 0;
-	for(int f = 0; f < 10; f ++)
+	for(int f = 0; f < 1; f ++)
 		res += pow((reslut[f] - expect[f]), 2);
 	return res;
 }

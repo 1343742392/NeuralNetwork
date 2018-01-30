@@ -188,13 +188,16 @@ public:
 		float * lOut = new float[ls[0].getYuanLength()];
 		ls[0].setInput(input);
 		ls[0].out(lOut);
+		//printfArr(ls[0].getYuanLength(),  lOut);
 		for (int f = 1; f < ls.size(); f++)
 		{
 	
 			ls[f].setInput(lOut);
 			ls[f].out(lOut);
+			/*printfArr(10, lOut);
+			printf("\n");*/
 		}
-		setArr(10, reslut, lOut);
+		setArr(1, reslut, lOut);
 		delete[] lOut;
 	}
 
@@ -214,5 +217,10 @@ public:
 			ls[f].setWs(netWs[f]);
 		}
 	}
+
+	 ~Net()
+	 {
+
+	 }
 };
 #endif 
