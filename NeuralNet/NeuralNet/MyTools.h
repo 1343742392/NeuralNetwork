@@ -23,6 +23,14 @@ void setArr(int inputLen, float *value, float *setValue, int star = 0)
 	}
 }
 
+void setArr(int inputLen, char *value, char *setValue, int star = 0)
+{
+	for (int f = 0; f < inputLen; f++)
+	{
+		value[f] = setValue[f];
+	}
+}
+
 float sigmoid(float input, float a = 1)
 {
 	return 1 / (1 + exp(-a * input));
